@@ -1,36 +1,26 @@
-%%This is a very basic article template.
-%%There is just one section and two subsections.
 \documentclass[12pt]{elsarticle}
 
-% \usepackage[utf8]{inputenc}
-%\usepackage[T1]{fontenc}
-\usepackage[english]{babel}
-% \usepackage{microtype} % optional, for aesthetics
-% \usepackage{tabularx} % nice to have
-% \usepackage{booktabs} % necessary for style
+% \usepackage[utf8]{inputenc} \usepackage[T1]{fontenc}
+\usepackage[english]{babel} \usepackage{microtype} % optional, for aesthetics
+% \usepackage{tabularx} % nice to have \usepackage{booktabs} % necessary for
+% style
 \usepackage{graphicx}
 \usepackage{subfigure}
 \usepackage{hyperref}
 \usepackage{rotating}
 
-\hypersetup{breaklinks=true}
+% \hypersetup{breaklinks=true}
 
 \journal{Information and Software Technology}
 
 
-% 
-% \jotdetails{
-%     volume=0,
-%     articleno=0,
-%     year=2010
-%     % doisuffix=jot.2011.10.1.a1,
-% %     url={\githuburl}
-% }
+%  \jotdetails{ volume=0, articleno=0, year=2010 % doisuffix=jot.2011.10.1.a1, %
+%     url={\githuburl} }
 
 \begin{document}
 \begin{frontmatter}
 
-\title{Performance in Model Transformations: Experiments with ATL, QVT and
+\title{Performance in Model Transformations: Experiments with ATL, QVTo and
 Mistral}
 % \runningtitle{Performance in Model Transformations: Experiments with ATL and
 % QVT}
@@ -52,23 +42,34 @@ Netherlands}
 University of Technology, Den Dolesch 2, 5612AZ, Eindhoven, The Netherlands}
 
 \begin{abstract}
-Model transformations are increasingly being incorporated in software development
-processes. However, as systems being developed with transformations and models
-grow in size and complexity, the performance of the transformations tends to
-degrade. In this paper we investigate the factors that have an impact on the execution performance
-of model transformations. We analyze the performance of three model
-transformation language engines, namely ATL, QVT Operational Mappings, and Mistral. We implemented solutions to two transformation problems
+ 
+% The results of this paper enable a transformation designer to estimate
+% beforehand the performance of a transformation, and to choose among
+% implementation alternatives to achieve the best performance. In addition,
+% transformation engine developers may find some of our results useful in order
+% to tune their tools for better performance.
+
+\emph{Context: } Model transformations are increasingly being incorporated in
+software development processes. However, as systems being developed with
+transformations and models grow in size and complexity, the performance of the
+transformations tends to degrade.
+\emph{Objective: } In this paper we investigate the factors that have an impact on the
+execution performance of model transformations. We analyze the performance of
+three model transformation language engines, namely ATL, QVT Operational
+Mappings, and Mistral. 
+\emph{Method: } We implemented solutions to two transformation problems
 in these languages, and compared the performance of these transformations.
 Additionally, we implemented these transformations in Java in order to
-evaluate the performance overhead imposed by the transformation languages. We extracted metric values from the transformations to systematically analyze how their 
-characteristics influence transformation execution performance. In order to
-evaluate the effect of language constructs on transformation performance, we
-implemented different versions of the ATL and Mistral transformations
-in functionally equivalent ways but using different strategies. 
-The results of this paper enable a transformation designer to estimate beforehand the
-performance of a transformation, and to choose among implementation alternatives to
-achieve the best performance. In addition, transformation engine developers may find some
-of our results useful in order to tune their tools for better performance.
+evaluate the performance overhead imposed by the transformation languages. We
+extracted metric values from the transformations to systematically analyze how
+their characteristics influence transformation execution performance. In order
+to evaluate the effect of language constructs on transformation performance, we
+implemented different versions of the ATL and Mistral transformations in
+functionally equivalent ways but using different strategies.
+\emph{Results: } 
+\emph{Conclusion: }
+
+
 \end{abstract}
 
 \begin{keyword}model transformations, metamodeling, ATL, QVT, Mistral,
@@ -83,8 +84,9 @@ Transformations are applied to problems that potentially involve huge models
 that need to be transformed. Examples of such problems are data translation and
 interoperability, refactoring of large code bases and model extraction.
 In order to be suitable for this task, transformation engines need to meet high
-scalability and performance requirements. In addition, transformation developers need to know the factors that determine the performance
-of transformations and need mechanisms to estimate and improve this performance.
+scalability and performance requirements. In addition, transformation
+developers need to know the factors that determine the performance of
+transformations and need mechanisms to estimate and improve this performance.
 
 Metamodels, models and transformation definitions all influence the
 performance of model transformations. The size and complexity of
@@ -138,9 +140,11 @@ time. We performed transformations on a series of models with increasing number
 of model elements.
 \item[Structure of input model.] Models can be generally considered as graphs with a possibly
 complex interconnected structure of model elements. Model complexity may cause
-performance decrease, if complex navigation and matching needs to be done over a model. Some models may expose a simpler, tree-like structure. In order to study the impact of the structure of input models on transformations, we
-executed transformations over models with both simpler (tree-like and linear) structure, and
-more complex interconnection structures.
+performance decrease, if complex navigation and matching needs to be done over
+a model. Some models may expose a simpler, tree-like structure. In order to
+study the impact of the structure of input models on transformations, we
+executed transformations over models with both simpler (tree-like and linear)
+structure, and more complex interconnection structures.
 \item [Transformation strategy.] A given transformation problem may be solved
 in multiple alternative ways in a single language. Generally, different solutions may
 perform differently. We investigated the impact of the usage of different language
