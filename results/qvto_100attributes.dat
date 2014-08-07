@@ -1,0 +1,8 @@
+#All QVTo transformations, 100 attributes, varying classes
+
+#classes	general	worst
+10	69.546	483.6599
+50	155.943	243.696
+100	267.389	438.305
+500	1154.621	1854.2404
+1000	2538.794	4330.956

@@ -1,0 +1,8 @@
+## This file contains the data for different attributes, each at 100 classes, general case
+# Attributes ATL      QVTr     QVTo     ATL_Ivan ATL_imperative
+1      	        0.051    0.094    0.174    0.028    0.016
+10     	        0.095    0.640    0.275    0.123    0.047
+50              0.403   20.672    1.465    0.300    0.312
+100             1.267  223.611    5.810    0.844    1.248
+500    	       20.056           108.878   10.226   24.149
+1000           63.596  NaN      371.326  295.539   78.218

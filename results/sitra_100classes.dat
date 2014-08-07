@@ -1,0 +1,9 @@
+#All SiTra transformations, 100 classes, varying attributes
+
+#attributes	general	worst
+1	2.686	2.554
+10	5.485	9.453
+50	23.214	21.408
+100	84.358	42.797
+500	1523.374	332.707
+1000	4915.179	1046.512

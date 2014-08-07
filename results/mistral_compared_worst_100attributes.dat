@@ -1,0 +1,8 @@
+#All Mistral transformations, worst case, 100 attributes, varying classes
+
+#classes	Mistral	Mistrala
+10	43.091	36.766
+50	149.412	125.854
+100	325.127	251.414
+500	3458.291	1219.728
+1000	10489.823	2707.721

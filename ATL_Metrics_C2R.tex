@@ -1,0 +1,67 @@
+\begin{table}[htb]
+\centering\small
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+Metric & $ATL$ & $ATL_a$ & $ATL_b$ & $ATL_c$ & $ATL_d$ \\
+\hline
+\# Transformation rules & 4 & 4 & 4 & 6 & 7 \\
+\hline
+\# Matched rules & 4 & 4 & 4 & 1 & 0 \\
+\hline
+\# Non-lazy matched rules & 1 & 1 & 2 & 0 & 0 \\
+\hline
+\# Lazy matched rules & 3 & 3 & 2 & 1 & 0 \\
+\hline
+\# Called rules & 0 & 0 & 0 & 5 & 7 \\
+\hline
+\# Rules with an input filter & 1 & 1 & 2 & 0 & 0 \\
+\hline
+\# Rules with a \texttt{do}-section & 0 & 0 & 1 & 5 & 7 \\
+\hline
+\# Helpers & 0 & 2 & 1 & 2 & 2 \\
+\hline
+\# Attribute helpers & 0 & 2 & 1 & 2 & 2 \\
+\hline
+\# Operation helpers & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\# Calls to \texttt{resolveTemp()} & 0 & 0 & 2 & 0 & 0 \\
+\hline
+\# Calls to \texttt{allInstances()} & 1 & 1 & 0 & 2 & 2 \\
+\hline
+\# Calls to built-in functions & 10 & 10 & 11 & 17 & 22 \\
+\hline
+\# Elements per output pattern & 1 & 1 & 1 & 0,67 & 0,57 \\
+\hline
+\# Parameters per called rule & 0 & 0 & 0 & 0,8 & 0,86 \\
+\hline
+\# Statements per \texttt{do}-section & 0 & 0 & 1 & 1,4 & 1,43 \\
+\hline
+\# Bindings per rule & 2,5 & 2,5 & 2,5 & 1,67 & 1,43 \\
+\hline
+Avg.\ helper cyclomatic complexity & 0 & 1 & 1 & 1 & 1 \\
+\hline
+\# Operations on collections per helper & 0 & 1 & 1 & 1 & 1 \\
+\hline
+\# Operations on collections per rule & 6 & 4 & 3,33 & 2,8 & 2,8 \\
+\hline
+%\# Calls to (Lazy Matched and Called) Rules per Rule (Fan-In) & 2 & 2 & 2,5 & 1,33 & 1,29 \\
+%\hline
+\# Avg.\ rule fan-in & 1,5 & 1,5 & 1,25 & 1,33 & 1,29 \\
+\hline
+\# Avg.\ helper fan-in & 0 & 3 & 5 & 5 & 7 \\
+\hline
+\# Avg.\ rule fan-out & 1,5 & 3 & 2,5 & 3 & 3,29 \\
+\hline
+\# Avg.\ helper fan-out & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\# Calls to \texttt{resolveTemp()} per rule & 0 & 0 & 0,5 & 0 & 0 \\
+\hline
+\# Calls to \texttt{allInstances()} per rule & 0,25 & 0 & 0 & 0,33 & 0,29 \\
+\hline
+\# Calls to \texttt{allInstances()} per helper & 0 & 0,5 & 0 & 0 & 0 \\
+\hline
+\end{tabular}
+\normalsize
+\caption{Metrics from the different ATL versions of the SimpleClass2SimpleRDBMS transformation}
+\label{tab:metrics:ATL:C2R}
+\end{table} 

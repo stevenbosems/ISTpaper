@@ -1,0 +1,8 @@
+#All Java transformations, 100 attributes, varying classes
+
+#classes	general	worst
+10	4.240	4.703
+50	13.151	15.004
+100	25.643	28.040
+500	147.597	141.145
+1000	333.230	729.627
